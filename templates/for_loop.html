@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If page</title>
+</head>
+
+<body>
+    {% for key in profile %}
+    <h4>{{key}}</h4>
+    {% endfor %}
+
+    {% for value in profile.values %}
+    <h3>{{value}}</h3>
+    {% endfor %}
+
+    {% for key,value in profile.items %}
+    <h3>{{key}}:{{value}}</h3>
+    {% endfor %}
+</body>
+
+</html>
