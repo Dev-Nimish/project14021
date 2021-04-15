@@ -7,7 +7,7 @@ def if_statement(request):
     return render(request,"if_statement.html", context = {'login':login})
 
 def if_else(request):
-    login = True
+    login = False
     return render(request,"if_else.html", context = {'login':login,'a':255,'b':45})
 
 def for_loop(request):
